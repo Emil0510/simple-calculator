@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <EditText
+        android:id="@+id/numberText"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="249dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberText">
+
+        <LinearLayout
+            android:layout_width="246dp"
+            android:layout_height="79dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="412dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="one"
+                android:text="1"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="434dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="two"
+                android:text="2"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="434dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="three"
+                android:text="3"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="434dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="247dp"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="495dp">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="four"
+                android:text="4"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="78dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="five"
+                android:text="5"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="six"
+                android:text="6"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="247dp"
+            android:layout_height="75dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="575dp">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="seven"
+                android:text="7"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="569dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="eight"
+                android:text="8"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="569dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="nine"
+
+                android:text="9"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="569dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="79dp"
+        android:layout_height="318dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/numberText">
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2_bng"
+            android:onClick="division"
+            android:text="/"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="414dp" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2_bng"
+            android:onClick="multiple"
+            android:text="*"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="490dp" />
+
+        <Button
+            android:id="@+id/buttonSubstract"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2_bng"
+            android:onClick="difference"
+            android:text="-"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="569dp" />
+
+        <Button
+            android:id="@+id/buttonSum"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn2_bng"
+            android:onClick="sum"
+            android:text="+"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="649dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="248dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bg"
+            android:onClick="equal"
+            android:text="="
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="646dp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_bg"
+            android:onClick="zero"
+            android:text="0"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="646dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="clear"
+        android:background="@drawable/btn3_bng"
+        android:text="Clear"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberText" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn3_bng"
+        android:layout_marginEnd="80dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
